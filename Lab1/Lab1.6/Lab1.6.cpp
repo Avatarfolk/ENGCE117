@@ -2,13 +2,10 @@
 
 int *GetMatrix( int *row, int *col ) ;
 
-
-
 int *GetMatrix( int *row, int *col ) {
 	
 	int *e ;
 	
-		
 	printf("Enter the desired row : ") ;
 	scanf("%d", row) ;
 	printf("Enter the required columns : : ") ;
