@@ -2,11 +2,8 @@
 
 void GetMatrix( int **value, int *row, int *col ) ;
 
-
-
 void GetMatrix( int **value, int *row, int *col ) {
-	
-			
+		
 		printf("Enter the desired row : ") ;
 		scanf("%d", row) ;
 		printf("Enter the required columns : ") ;
