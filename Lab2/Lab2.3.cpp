@@ -5,10 +5,9 @@ void explode( char str1[], char splitter, char str2[][10], int *count ) ;
 
 void explode( char str1[], char splitter, char str2[][10], int *count ) {
     int n , z = 0 ;
-    int length = strlen( str1 ) ;
     *count = 0 ; 
     
-    for (n = 0 ; n < length  ; ++n ) {
+    for (n = 0 ; str1[n] != 0 ; ++n ) {
         if (str1[n] != splitter) {
             str2[*count][z++] = str1[n] ;
         } else {
