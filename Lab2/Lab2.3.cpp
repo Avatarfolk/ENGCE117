@@ -4,10 +4,11 @@
 void explode( char str1[], char splitter, char str2[][10], int *count ) ;
 
 void explode( char str1[], char splitter, char str2[][10], int *count ) {
-    *count = 0 ; 
     int n , z = 0 ;
-
-    for (n = 0 ; str1[n] != 0 ; ++n ) {
+    int length = strlen( str1 ) ;
+    *count = 0 ; 
+    
+    for (n = 0 ; n < length  ; ++n ) {
         if (str1[n] != splitter) {
             str2[*count][z++] = str1[n] ;
         } else {
@@ -17,7 +18,6 @@ void explode( char str1[], char splitter, char str2[][10], int *count ) {
         }
     }
 
-    
     if (z > 0) {
         str2[*count][z] = 0 ;
         ++(*count);
@@ -29,7 +29,6 @@ int main() {
     int num ;
     explode( "I/Love/You", '/', out, &num ) ;
 
-    
     for (int i = 0; i < num; ++i) {
         printf( "str2[%d] = \"%s\"\n", i, out[i] ) ;
     }
