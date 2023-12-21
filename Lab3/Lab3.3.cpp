@@ -27,4 +27,4 @@ struct student upgrade(struct student child) {
     } 
     return child;
 }
-
+// ค่าgpaเพิ่มขึ้น โดยกำหนดให้เพศเป็นF ได้ค่าเป็น3.60
