@@ -25,4 +25,4 @@ void upgrade( struct student *child ) {
         child -> gpa += child -> gpa * 0.20;
     } 
 }
-
+//ค่าgpaเพิ่มขึ้น
