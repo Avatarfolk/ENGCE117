@@ -3,12 +3,6 @@
 
 int *GetSet( int * ) ;
 
-int main() {
- int *data, num ;
- data = GetSet( &num ) ;
- return 0 ;
-}//end function
-
 int *GetSet( int * ) {
 	int *data, num ;
 	printf( "Enter the number of Member composition : " ) ;
@@ -23,3 +17,10 @@ int *GetSet( int * ) {
 		printf( "\n Member informationr [%d] : %d\n", z + 1, data[ z ] ) ;
 	}
 }
+
+int main() {
+ int *data, num ;
+ data = GetSet( &num ) ;
+ return 0 ;
+}//end function
+
