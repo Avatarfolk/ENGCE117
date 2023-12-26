@@ -1,33 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
-int *GetSet( int *num ) ;
-
-
-int *GetSet( int *num ) {
-	printf( "Enter the number of Member composition : " ) ;
-    scanf( "%d", num ) ;
-    
-    int *arr = ( int * )malloc( *num * sizeof(int) );
-    
-    for( int n = 0 ; n < *num ; n++ ) {
-    	printf( "Enter number of Member [%d] : ", n + 1 ) ;
-    	scanf( "%d", &arr[n] ) ;
-	}
-	return arr ;
-}
+int *GetSet( int * ) ;
 
 int main() {
- 	int *data, num ;
-	
- 	data = GetSet( &num ) ;
- 
- 	printf( "\n Total number of members = %d \n", num ) ;
-    for ( int n = 0; n < num; n++ ) {
-        printf( "\n Member informationr [%d] : %d\n", n + 1, data[n] ) ;
-    }
-    free( data ) ;
- 	return 0 ;
+ int *data, num ;
+ data = GetSet( &num ) ;
+ return 0 ;
 }//end function
 
-
+int *GetSet( int * ) {
+	int *data, num ;
+	printf( "Enter the number of Member composition : " ) ;
+	scanf( "%d", &num ) ;
+	
+	for( int n = 0 ; n < num ; n++ ) {
+		printf( "Enter number of Member [%d] : ", n + 1 ) ;
+		scanf( "%d", &data[ n ] ) ;
+	}
+	printf( "\n Total number of members = %d \n", num ) ;
+	for( int z = 0 ; z < num ; z++ ) {
+		printf( "\n Member informationr [%d] : %d\n", z + 1, data[ z ] ) ;
+	}
+}
