@@ -3,7 +3,7 @@
 #include <string.h>
 
 struct Node {
-    char data[20] ;// สร้างตัวแปรdata เพื่อเก็บข้อมูลตัวอักษร
+    char data[20] ;
     struct Node* back ;
     struct Node* next ;
 };
